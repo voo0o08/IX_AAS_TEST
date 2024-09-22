@@ -1,0 +1,712 @@
+{
+  "assetAdministrationShells": [
+    {
+      "idShort": "CloudDataSolution",
+      "id": "http://nestfield.co.kr/ids/aas/CloudDataSolution",
+      "assetInformation": {
+        "assetKind": "Instance",
+        "globalAssetId": "http://nestfield.co.kr/asset/CloudDataSolution"
+      },
+      "submodels": [
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "aas.nest.io/ids/sm/CloudSloution/1/1/15S7T484K554"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "aas.nest.io/ids/sm/EdgeGWSolution/1/1/346U4845FG12"
+            }
+          ]
+        }
+      ],
+      "modelType": "AssetAdministrationShell"
+    },
+    {
+      "idShort": "Nestfield",
+      "id": "http://nestfield.co.kr/ids/aas/Nestfield",
+      "assetInformation": {
+        "assetKind": "Instance",
+        "globalAssetId": "http://nestfield.co.kr/asset/Nestfield"
+      },
+      "submodels": [
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "aas.nest.io/ids/sm/Identification/1/1/83D1W94P5638"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "aas.nest.io/ids/sm/Facilities/1/1/E5M123A87423"
+            }
+          ]
+        }
+      ],
+      "modelType": "AssetAdministrationShell"
+    },
+    {
+      "idShort": "AssemblyLine_1",
+      "id": "http://nestfield.co.kr/ids/aas/AssemblyLine_1",
+      "assetInformation": {
+        "assetKind": "Instance",
+        "globalAssetId": "http://nestfield.co.kr/asset/AssemblyLine_1"
+      },
+      "submodels": [
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "aas.nest.io/ids/sm/Components/1/0/794B1385FQ43"
+            }
+          ]
+        }
+      ],
+      "modelType": "AssetAdministrationShell"
+    }
+  ],
+  "submodels": [
+    {
+      "idShort": "CloudSolution",
+      "id": "aas.nest.io/ids/sm/CloudSloution/1/1/15S7T484K554",
+      "kind": "Instance",
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "Submodel",
+            "value": "https://admin-shell.io/ids/EdgeGWSolution/Submodel/1/1"
+          }
+        ]
+      },
+      "submodelElements": [
+        {
+          "idShort": "BasicConfiguration",
+          "description": [
+            {
+              "language": "en",
+              "text": "Internet address and Sampling interval time"
+            },
+            {
+              "language": "kr",
+              "text": "\uC778\uD130\uB137 \uC8FC\uC18C \uBC0F \uC0D8\uD50C\uB9C1 \uC8FC\uAE30 \uC124\uC815"
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "SubmodelElementCollection",
+                "value": "http://nestfield.co.kr/nestfield/CloudSolution/BasicConfiguration/1/0"
+              }
+            ]
+          },
+          "value": [
+            {
+              "category": "PARAMETER",
+              "idShort": "NetworkConnection",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "0173-1#02-AAK174#002"
+                  }
+                ]
+              },
+              "valueType": "xs:string",
+              "value": "X.X.X.X",
+              "modelType": "Property"
+            },
+            {
+              "category": "PARAMETER",
+              "idShort": "SamplingInterval",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "0173-1#02-AAM764#003"
+                  }
+                ]
+              },
+              "valueType": "xs:float",
+              "value": "100.0",
+              "modelType": "Property"
+            }
+          ],
+          "modelType": "SubmodelElementCollection"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "EdgeGWSolution",
+      "id": "aas.nest.io/ids/sm/EdgeGWSolution/1/1/346U4845FG12",
+      "kind": "Instance",
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "Submodel",
+            "value": "https://admin-shell.io/ids/EdgeGWSolution/Submodel/1/1"
+          }
+        ]
+      },
+      "submodelElements": [
+        {
+          "idShort": "Nestfield_GW",
+          "description": [
+            {
+              "language": "en",
+              "text": "Nestfield Gateway"
+            },
+            {
+              "language": "kr",
+              "text": "\uB124\uC2A4\uD2B8\uD544\uB4DC \uAC8C\uC774\uD2B8\uC6E8\uC774"
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "SubmodelElementCollection",
+                "value": "http://nestfield.co.kr/nestfield/EdgeGWSolution/Nestfield_GW/1/0"
+              }
+            ]
+          },
+          "value": [
+            {
+              "idShort": "BasicConfiguration",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Internet address and Sampling interval time"
+                },
+                {
+                  "language": "kr",
+                  "text": "\uC778\uD130\uB137 \uC8FC\uC18C \uBC0F \uC0D8\uD50C\uB9C1 \uC8FC\uAE30 \uC124\uC815"
+                }
+              ],
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "SubmodelElementCollection",
+                    "value": "https://www.AASnest.io/ids/EdgeGWSolution/BasicConfiguration/1/0"
+                  }
+                ]
+              },
+              "value": [
+                {
+                  "category": "PARAMETER",
+                  "idShort": "NetworkConnection",
+                  "semanticId": {
+                    "type": "ExternalReference",
+                    "keys": [
+                      {
+                        "type": "GlobalReference",
+                        "value": "0173-1#02-AAK174#002"
+                      }
+                    ]
+                  },
+                  "valueType": "xs:string",
+                  "value": "opc.tcp://X.X.X.X:4840",
+                  "modelType": "Property"
+                },
+                {
+                  "category": "PARAMETER",
+                  "idShort": "SamplingInterval",
+                  "semanticId": {
+                    "type": "ExternalReference",
+                    "keys": [
+                      {
+                        "type": "GlobalReference",
+                        "value": "0173-1#02-AAM764#003"
+                      }
+                    ]
+                  },
+                  "valueType": "xs:float",
+                  "value": "100.0",
+                  "modelType": "Property"
+                }
+              ],
+              "modelType": "SubmodelElementCollection"
+            },
+            {
+              "idShort": "ProSix6A106F156S",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "SubmodelElementCollection",
+                    "value": "https://www.AASnest.io/ids/EdgeGWSolution/EosonC4Robot_1/1/0"
+                  }
+                ]
+              },
+              "value": [
+                {
+                  "idShort": "BasicConfiguration",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Internet address and Sampling interval time"
+                    },
+                    {
+                      "language": "kr",
+                      "text": "\uC778\uD130\uB137 \uC8FC\uC18C \uBC0F \uC0D8\uD50C\uB9C1 \uC8FC\uAE30 \uC124\uC815"
+                    }
+                  ],
+                  "semanticId": {
+                    "type": "ExternalReference",
+                    "keys": [
+                      {
+                        "type": "SubmodelElementCollection",
+                        "value": "https://www.AASnest.io/ids/EdgeGWSolution/BasicConfiguration/1/0"
+                      }
+                    ]
+                  },
+                  "value": [
+                    {
+                      "category": "PARAMETER",
+                      "idShort": "NetworkConnection",
+                      "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                          {
+                            "type": "GlobalReference",
+                            "value": "0173-1#02-AAK174#002"
+                          }
+                        ]
+                      },
+                      "valueType": "xs:string",
+                      "value": "opc.tcp://X.X.X.X:[PORT]",
+                      "modelType": "Property"
+                    },
+                    {
+                      "category": "PARAMETER",
+                      "idShort": "SamplingInterval",
+                      "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                          {
+                            "type": "GlobalReference",
+                            "value": "0173-1#02-AAM764#003"
+                          }
+                        ]
+                      },
+                      "valueType": "xs:float",
+                      "value": "100.0",
+                      "modelType": "Property"
+                    }
+                  ],
+                  "modelType": "SubmodelElementCollection"
+                }
+              ],
+              "modelType": "SubmodelElementCollection"
+            }
+          ],
+          "modelType": "SubmodelElementCollection"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Facilities",
+      "id": "aas.nest.io/ids/sm/Facilities/1/1/E5M123A87423",
+      "kind": "Instance",
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "Submodel",
+            "value": "https://admin-shell.io/ids/Facilities/Submodel/1/1"
+          }
+        ]
+      },
+      "submodelElements": [
+        {
+          "idShort": "AssemblyLine_1",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "aas.nest.io/ids/cd/HasElementOf/1/0/"
+              }
+            ]
+          },
+          "value": {
+            "type": "ModelReference",
+            "keys": [
+              {
+                "type": "AssetAdministrationShell",
+                "value": "http://nestfield.co.kr/ids/aas/AssemblyLine_1"
+              }
+            ]
+          },
+          "modelType": "ReferenceElement"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Components",
+      "id": "aas.nest.io/ids/sm/Components/1/0/794B1385FQ43",
+      "kind": "Instance",
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "Submodel",
+            "value": "https://admin-shell.io/ids/Components/Submodel/1/1"
+          }
+        ]
+      },
+      "submodelElements": [
+        {
+          "idShort": "ProSix6A106F156S",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/ids/1/0/HasElementOf"
+              }
+            ]
+          },
+          "modelType": "ReferenceElement"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Identification",
+      "id": "aas.nest.io/ids/sm/Identification/1/1/83D1W94P5638",
+      "kind": "Instance",
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "Submodel",
+            "value": "https://admin-shell.io/ids/Identification/Submodel/1/1"
+          }
+        ]
+      },
+      "submodelElements": [
+        {
+          "category": "PARAMETER",
+          "idShort": "ManufacturerName",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "0173-1#02-AAO677#002"
+              }
+            ]
+          },
+          "valueType": "xs:string",
+          "value": "Nestfield",
+          "modelType": "Property"
+        },
+        {
+          "category": "PARAMETER",
+          "idShort": "SupplierName",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "0173-1#02-AAO735#003"
+              }
+            ]
+          },
+          "valueType": "xs:string",
+          "value": "Nestfield",
+          "modelType": "Property"
+        },
+        {
+          "category": "PARAMETER",
+          "idShort": "ContactInfo",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/ids/1/0/ContactInfo"
+              }
+            ]
+          },
+          "value": [
+            {
+              "category": "PARAMETER",
+              "idShort": "Name",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "0173-1#02-AAO735#003"
+                  }
+                ]
+              },
+              "valueType": "xs:string",
+              "value": "Nestfield",
+              "modelType": "Property"
+            },
+            {
+              "category": "PARAMETER",
+              "idShort": "PhysicalAddress",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://admin-shell.io/ids/1/0/PhysicalAddress"
+                  }
+                ]
+              },
+              "value": [
+                {
+                  "category": "PARAMETER",
+                  "idShort": "CountryCode",
+                  "semanticId": {
+                    "type": "ExternalReference",
+                    "keys": [
+                      {
+                        "type": "GlobalReference",
+                        "value": "0173-1#02-AAO730#001"
+                      }
+                    ]
+                  },
+                  "valueType": "xs:string",
+                  "value": "KR",
+                  "modelType": "Property"
+                },
+                {
+                  "category": "PARAMETER",
+                  "idShort": "Street",
+                  "semanticId": {
+                    "type": "ExternalReference",
+                    "keys": [
+                      {
+                        "type": "GlobalReference",
+                        "value": "0173-1#02-AAO128#002"
+                      }
+                    ]
+                  },
+                  "valueType": "xs:string",
+                  "value": "Haean-ro",
+                  "modelType": "Property"
+                },
+                {
+                  "category": "PARAMETER",
+                  "idShort": "PostalCode",
+                  "semanticId": {
+                    "type": "ExternalReference",
+                    "keys": [
+                      {
+                        "type": "GlobalReference",
+                        "value": "0112/2///61360_4#ADA014#001"
+                      }
+                    ]
+                  },
+                  "valueType": "xs:string",
+                  "value": "15588 (Zip)",
+                  "modelType": "Property"
+                },
+                {
+                  "category": "PARAMETER",
+                  "idShort": "City",
+                  "semanticId": {
+                    "type": "ExternalReference",
+                    "keys": [
+                      {
+                        "type": "GlobalReference",
+                        "value": "https://admin-shell.io/ids/1/0/City"
+                      }
+                    ]
+                  },
+                  "valueType": "xs:string",
+                  "value": "Ansan-si",
+                  "modelType": "Property"
+                },
+                {
+                  "category": "PARAMETER",
+                  "idShort": "StateCounty",
+                  "semanticId": {
+                    "type": "ExternalReference",
+                    "keys": [
+                      {
+                        "type": "GlobalReference",
+                        "value": "https://admin-shell.io/ids/1/0/StateCounty"
+                      }
+                    ]
+                  },
+                  "valueType": "xs:string",
+                  "value": "Sangnok-gu, Gyeonggi-do",
+                  "modelType": "Property"
+                }
+              ],
+              "modelType": "SubmodelElementCollection"
+            },
+            {
+              "category": "PARAMETER",
+              "idShort": "Email",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://admin-shell.io/ids/1/0/Email"
+                  }
+                ]
+              },
+              "valueType": "xs:string",
+              "value": "sales@nestfield.co.kr",
+              "modelType": "Property"
+            },
+            {
+              "category": "PARAMETER",
+              "idShort": "URL",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "0173-1#02-AAO694#001"
+                  }
+                ]
+              },
+              "valueType": "xs:string",
+              "value": "http://www.nestfield.co.kr/",
+              "modelType": "Property"
+            },
+            {
+              "category": "PARAMETER",
+              "idShort": "Phone",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "0112/2///61360_4#ADA009#001"
+                  }
+                ]
+              },
+              "valueType": "xs:string",
+              "value": "\u002B82-031-400-XXXX",
+              "modelType": "Property"
+            },
+            {
+              "category": "PARAMETER",
+              "idShort": "Fax",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "0112/2///61360_4#ADA011#001"
+                  }
+                ]
+              },
+              "valueType": "xs:string",
+              "value": "\u002B82-031-400-XXXX",
+              "modelType": "Property"
+            }
+          ],
+          "modelType": "SubmodelElementCollection"
+        },
+        {
+          "category": "PARAMETER",
+          "idShort": "CompanyLogo",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/ids/1/0/CompanyLogo"
+              }
+            ]
+          },
+          "value": "/aasx/image/logo/Nestfield_logo.png",
+          "contentType": "image/png",
+          "modelType": "File"
+        },
+        {
+          "category": "PARAMETER",
+          "idShort": "URL",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "0173-1#02-AAO694#001"
+              }
+            ]
+          },
+          "valueType": "xs:string",
+          "value": "http://www.nestfield.co.kr/",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    }
+  ],
+  "conceptDescriptions": [
+    {
+      "idShort": "HasElementOf",
+      "id": "https://admin-shell.io/ids/1/0/HasElementOf",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/3/0"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "HasElementOf"
+              }
+            ],
+            "shortName": [
+              {
+                "language": "en",
+                "text": "HasElementOf"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "A reference of actual instance of element."
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    }
+  ]
+}

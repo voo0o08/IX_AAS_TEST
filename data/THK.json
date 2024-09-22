@@ -1,0 +1,298 @@
+{
+  "assetAdministrationShells": [
+    {
+      "idShort": "Plating_Equipment",
+      "id": "https://example.com/ids/sm/7232_3270_8042_0278",
+      "assetInformation": {
+        "assetKind": "Instance"
+      },
+      "submodels": [
+        {
+          "type": "ExternalReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "https://example.com/ids/sm/4132_3270_8042_1963"
+            }
+          ]
+        },
+        {
+          "type": "ExternalReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "https://example.com/ids/sm/6232_3270_8042_3582"
+            }
+          ]
+        },
+        {
+          "type": "ExternalReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "https://example.com/ids/sm/7232_3270_8042_2278"
+            }
+          ]
+        }
+      ],
+      "modelType": "AssetAdministrationShell"
+    }
+  ],
+  "submodels": [
+    {
+      "idShort": "Identification",
+      "id": "https://example.com/ids/sm/4132_3270_8042_1963",
+      "submodelElements": [
+        {
+          "category": "PARAMETER",
+          "idShort": "Manufacturer_Name",
+          "description": [],
+          "semanticId": {
+            "type": "ModelReference",
+            "keys": [
+              {
+                "type": "ConceptDescription",
+                "value": "0173-1#02-AAO677#002"
+              }
+            ]
+          },
+          "valueType": "xs:string",
+          "value": "THK",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Technical_Data",
+      "id": "https://example.com/ids/sm/6232_3270_8042_3582",
+      "submodelElements": [
+        {
+          "category": "CONSTANT",
+          "idShort": "Current",
+          "value": [
+            {
+              "category": "PARAMETER",
+              "idShort": "Setting_Current",
+              "description": [
+                {
+                  "language": "kr",
+                  "text": "\uC124\uC815\uB41C \uC804\uB958\uAC12"
+                }
+              ],
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "0173-1#02-AAU445#003"
+                  }
+                ]
+              },
+              "valueType": "xs:float",
+              "value": "0",
+              "modelType": "Property"
+            },
+            {
+              "category": "PARAMETER",
+              "idShort": "Setting_Unit",
+              "description": [
+                {
+                  "language": "kr",
+                  "text": "\uC124\uC815\uB41C \uB2E8\uC704\uAC12"
+                }
+              ],
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "0173-1#02-AAH687#005"
+                  }
+                ]
+              },
+              "valueType": "xs:string",
+              "value": "[mA]",
+              "modelType": "Property"
+            }
+          ],
+          "modelType": "SubmodelElementCollection"
+        },
+        {
+          "category": "CONSTANT",
+          "idShort": "Plating_Thickness",
+          "value": [
+            {
+              "category": "PARAMETER",
+              "idShort": "Standard_Max_Thickness",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "0173-1#02-BAF323#006"
+                  }
+                ]
+              },
+              "valueType": "xs:float",
+              "value": "7",
+              "modelType": "Property"
+            },
+            {
+              "category": "PARAMETER",
+              "idShort": "Standard_Min_Thickness",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "0173-1#02-AAH193#005"
+                  }
+                ]
+              },
+              "valueType": "xs:float",
+              "value": "5",
+              "modelType": "Property"
+            },
+            {
+              "category": "PARAMETER",
+              "idShort": "Setting_Max_Thickness",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "0173-1#02-BAF323#006"
+                  }
+                ]
+              },
+              "valueType": "xs:float",
+              "value": "4",
+              "modelType": "Property"
+            },
+            {
+              "category": "PARAMETER",
+              "idShort": "Setting_Min_Thickness",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "0173-1#02-AAH193#005"
+                  }
+                ]
+              },
+              "valueType": "xs:float",
+              "value": "2",
+              "modelType": "Property"
+            },
+            {
+              "category": "PARAMETER",
+              "idShort": "Setting_Unit",
+              "description": [
+                {
+                  "language": "kr",
+                  "text": "\uC124\uC815\uD558\uB294 \uAC12\uC758 \uB2E8\uC704"
+                }
+              ],
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "0173-1#02-AAH687#005"
+                  }
+                ]
+              },
+              "valueType": "xs:string",
+              "value": "[\u03BCm]",
+              "modelType": "Property"
+            }
+          ],
+          "modelType": "SubmodelElementCollection"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Operational_Data",
+      "id": "https://example.com/ids/sm/7232_3270_8042_2278",
+      "submodelElements": [
+        {
+          "category": "VARIABLE",
+          "idShort": "Lot_Number",
+          "description": [
+            {
+              "language": "kr",
+              "text": "\uB85C\uD2B8 \uB2E8\uC704\uC758 \uC21C\uC11C\uB97C \uC2DD\uBCC4\uD558\uAE30 \uC704\uD55C \uC21C\uC11C\uC801\uC778 \uBC88\uD638"
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "0173-1#02-AAQ196#002"
+              }
+            ]
+          },
+          "valueType": "xs:int",
+          "modelType": "Property"
+        },
+        {
+          "category": "CONSTANT",
+          "idShort": "Plating_Thickness",
+          "value": [
+            {
+              "category": "VARIABLE",
+              "idShort": "Measure_Thickness",
+              "description": [
+                {
+                  "language": "kr",
+                  "text": "\uC2E4\uC81C \uCE21\uC815\uB41C \uB450\uAED8\uAC12"
+                }
+              ],
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "0173-1#02-BAB264#007"
+                  }
+                ]
+              },
+              "valueType": "xs:float",
+              "value": "0",
+              "modelType": "Property"
+            },
+            {
+              "category": "PARAMETER",
+              "idShort": "Measure_Unit",
+              "description": [
+                {
+                  "language": "kr",
+                  "text": "\uCE21\uC815\uD558\uB294 \uAC12\uC758 \uB2E8\uC704"
+                }
+              ],
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "0173-1#02-AAH687#005"
+                  }
+                ]
+              },
+              "valueType": "xs:string",
+              "value": "[\u03BCm]",
+              "modelType": "Property"
+            }
+          ],
+          "modelType": "SubmodelElementCollection"
+        }
+      ],
+      "modelType": "Submodel"
+    }
+  ],
+  "conceptDescriptions": []
+}
